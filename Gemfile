@@ -29,6 +29,20 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+
+gem 'hirb'
+
+gem 'geocoder'
+
+gem 'twilio-ruby', '~> 4.11.1'
+
+gem 'yelp', require: 'yelp'
+
+gem 'figaro'
+
+gem 'underscore-rails'
+
+gem 'gmaps4rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -39,15 +53,6 @@ group :development, :test do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
-  gem 'hirb'
-
-  gem 'geocoder'
-
-  gem 'twilio-ruby', '~> 4.11.1'
-
-  gem 'yelp', require: 'yelp'
-
-  gem 'figaro'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
