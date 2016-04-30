@@ -91,6 +91,8 @@ class ResourcesController < ApplicationController
 
 	end
 
+	def show_shelter
+	end
 
 	
 

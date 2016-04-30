@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get '/food' => 'resources#show_food'
   get '/hospital' => 'resources#show_hospital'
   get '/mental_health' => 'resources#show_mentalhealth'
+  get '/youth_shelter' => 'resources#show_youthshelter'
+  get '/women_shelter' => 'resources#show_womenshelter'
 end
