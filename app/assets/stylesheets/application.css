@@ -1,7 +1,12 @@
 .container{
 	padding: 50px;
 }
-
+#left_panel ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
 .list-group h3{
 	margin-left: 50px;
 }

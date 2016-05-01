@@ -2,32 +2,29 @@
 <html>
 <head>
 	<title>CheckIt!</title>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+			
+		})
+	</script>
 </head>
 <body>
 	<div class='container'>
 
 		<div id="left_panel">
 			<h4>Do you need any of the following for the survivor?</h4>
-			<div class="checkbox">
-	  			<label><a href = "/food">Food</a></label>
-			</div>
-			<div class="checkbox">
-	  			<label><a href = "/hospital">Hospital</a></label>
-			</div>
-			<div class="checkbox">
-	  			<label><a href = "/youth_shelter">Youth Shelter</a></label>
-			</div>
-			<div class="checkbox">
-	  			<label><a href = "/women_shelter">Women's Shelter</a></label>
-			</div>
-			<div class="checkbox">
-	  			<label><a href = "/mental_health">Mental Health</a></label>
-			</div>
+			<ul>
+	  			<li><a href = "/food">Food</a></li>
+	  			<li><a href = "/hospital">Hospital</a></li>
+	  			<li><a href = "/youth_shelter">Youth Shelter</a></li>
+	  			<li><a href = "/women_shelter">Women's Shelter</a></li>
+	  			<li><a href = "/mental_health">Mental Health</a></li>
+			</ul>
 		</div> <!--end "left_panel"-->
 		<div id='right_panel'>
 			<h4>Please keep these in mind!</h4>
-			<p a ref=''>Establishing Trust</p>
-			<p a ref=''>Signs to Watch For</p>
+			<p><a href='/trust'>Establishing Trust</a></p>
+			<p><a href='/signs'>Signs to Watch For</a></p>
 		</div> <!--end "right_panel"-->
 
 		<button><a href = "/form">Proceed to Form</a></button>
