@@ -7,7 +7,7 @@ class CreateYoutshelters < ActiveRecord::Migration
       t.string :state
       t.string :latitude
       t.string :longitude
-      t.integer :phone
+      t.string :phone
 
       t.timestamps null: false
     end
