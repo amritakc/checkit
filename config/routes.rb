@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/trust' => 'users#show_trust'
   get '/form' => 'forms#index'
   post '/create_form' => 'forms#create'
+  delete '/sessions/:id' => 'users#destroy'
 
 
 end

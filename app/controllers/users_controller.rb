@@ -2,7 +2,6 @@ class UsersController < ApplicationController
 
 		def create
 	  		@user = User.find_by(email: params[:email])
-	  		session[:user_id]=@user.id
 
 	  		if @user && @user.authenticate(params[:password])
 	      		session[:user_id] = @user.id
@@ -11,12 +10,19 @@ class UsersController < ApplicationController
 	  		else
 	  			flash[:loginmistakes] = ["Invalid Login"]
 	  			redirect_to "/" 
+  			end
   		end
+
   		def show_signs
   		end
+
   		def show_trust
   		end
-  	end
+
+  		def destroy
+    		logout_user
+    		redirect_to '/'
+    	end
 
 
 end
