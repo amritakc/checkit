@@ -91,7 +91,13 @@ class ResourcesController < ApplicationController
 
 	end
 
-	def show_shelter
+	def show_youthshelter
+		
+	end
+
+	def show_womenshelter
+		@x = Womenshelter.all
+		# render :json => @x
 	end
 
 	

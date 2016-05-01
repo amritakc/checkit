@@ -1,0 +1,14 @@
+<div>
+
+<h2>Location of Women's Shelter</h2>
+<% if @x %>
+<% my_url = "http://maps.google.com/maps/api/staticmap?size=850x600&sensor=false&zoom=12" %>
+<% @x.each do |location| %> 
+<% my_url += "&markers=|label:#{location.id}|#{location.latitude}%2C#{location.longitude}" %>    
+<% end %>
+<%= image_tag my_url %>
+<%end%>
+
+
+
+</div>
