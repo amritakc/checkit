@@ -8,19 +8,36 @@
       handler.fitMapToBounds();
     });
 </script>
-
-<h2>Location of Women's Shelter</h2>
-
-	<% @x.each do |location| %> 
-		<h4><%=location.name %></h4>
-		<p><%=location.address %></p>   
-	<%end%>
-
-
+<div class = "backgroundMap">
+  <div class="container">
+    <div class ="row">
+      <div class ="col-sm-4">
+      <h1>Women's Shelter</h1>
+      <table class="table table-bordered">
+        <tbody>
+          <% @x.each do |location| %>
+            <tr>
+              <td>
+                <p><strong><%=location.name %></strong></p>
+                <p><%=location.address %></p>
+             
+              </td>
+            </tr>
+         <%end%>
+        </tbody>
+      </table>
+      <% if flash[:success] %>
+      <p style="color: #f15a29;"><%= flash[:success] %></p>
+      <% end %>
+      </div>
       <h1> Map</h1>
       <div id = "map" class="col-sm-6" style = "border: 1px solid black; width: 60%; min-height: 800px;">
       </div>
 
+    
+      </div>
+
+  </div>
 
 <script>
     handler = Gmaps.build('Google');
