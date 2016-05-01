@@ -26,18 +26,24 @@ ActiveRecord::Schema.define(version: 20160430233110) do
 
   create_table "womenshelters", force: :cascade do |t|
     t.string   "name"
-    t.string   "address"
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
     t.string   "latitude"
     t.string   "longitude"
+    t.integer  "phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "youtshelters", force: :cascade do |t|
     t.string   "name"
-    t.string   "address"
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
     t.string   "latitude"
     t.string   "longitude"
+    t.integer  "phone"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
