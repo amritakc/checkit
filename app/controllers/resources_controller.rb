@@ -91,7 +91,26 @@ class ResourcesController < ApplicationController
 
 	end
 
-	def show_shelter
+	def show_womenshelter
+		@x = Womenshelter.all
+		# render :json => @x
+		@hash = Gmaps4rails.build_markers(@x) do |place, marker|
+			@placeinfo = "<p>" + place.name + "</p>"
+				marker.lat place.latitude
+	 			marker.lng place.longitude
+	 			marker.infowindow @placeinfo 
+		end
+	end
+
+	def show_youthshelter
+		@x = Youtshelter.all
+		# render :json => @x
+		@hash = Gmaps4rails.build_markers(@x) do |place, marker|
+			@placeinfo = "<p>" + place.name + "</p>"
+				marker.lat place.latitude
+	 			marker.lng place.longitude
+	 			marker.infowindow @placeinfo 
+		end
 	end
 
 	
