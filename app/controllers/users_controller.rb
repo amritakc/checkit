@@ -11,6 +11,10 @@ class UsersController < ApplicationController
 	  			flash[:loginmistakes] = ["Invalid Login"]
 	  			redirect_to "/" 
   		end
+  		def show_signs
+  		end
+  		def show_trust
+  		end
   	end
 
 
