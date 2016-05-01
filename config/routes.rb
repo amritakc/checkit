@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   get '/mental_health' => 'resources#show_mentalhealth'
   get '/youth_shelter' => 'resources#show_youthshelter'
   get '/women_shelter' => 'resources#show_womenshelter'
+  get '/form' => 'forms#index'
+  post '/create_form' => 'forms#create'
+
+
 end
