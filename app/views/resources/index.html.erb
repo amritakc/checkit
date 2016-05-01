@@ -2,55 +2,27 @@
 <html>
 <head>
 	<title>CheckIt!</title>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
-	<nav class="navbar navbar-inverse">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#">WebSiteName</a>
-	    </div>
-	    <ul class="nav navbar-nav">
-	      <li class="active"><a href="#">Home</a></li>
-	      <li><a href="#">Logout</a></li>
-	    </ul>
-	  </div>
-	</nav>
 	<div class='container'>
 
 		<div id="left_panel">
 			<h4>Do you need any of the following for the survivor?</h4>
 			<div class="checkbox">
-	  			<label><input type="checkbox" value="food">Food</label>
+	  			<label><a href = "/food">Food</a></label>
 			</div>
 			<div class="checkbox">
-	  			<label><input type="checkbox" value="shelter">Shelter</label>
+	  			<label><a href = "/hospital">Hospital</a></label>
 			</div>
 			<div class="checkbox">
-	  			<label><input type="checkbox" value="medical">Medical</label>
+	  			<label><a href = "/youth_shelter">Youth Shelter</a></label>
 			</div>
 			<div class="checkbox">
-	  			<label><input type="checkbox" value="soc_services">Social Services</label>
+	  			<label><a href = "/women_shelter">Women's Shelter</a></label>
 			</div>
-			<div id="food_info">
-				
-			</div><!--end "food_info"-->
-			<div id="shelter_info">
-				
-			</div><!--end "shelter_info"-->
-			<div id="med_info">
-				
-			</div><!--end "med_info"-->
-			<div id="soc_info">
-				
-			</div><!--end "soc_info"-->
+			<div class="checkbox">
+	  			<label><a href = "/mental_health">Mental Health</a></label>
+			</div>
 		</div> <!--end "left_panel"-->
 		<div id='right_panel'>
 			<h4>Please keep these in mind!</h4>
@@ -60,15 +32,6 @@
 
 		<button>Proceed to Form</button>
 	</div> <!--end 'container'-->
-
-	<h1>Resources</h1>
-
-<a href = "/food">food</a>
-<a href = "/hospital">hospital</a>
-<a href = "/youth_shelter">youth shelter</a>
-<a href = "/women_shelter">women shelter</a>
-<a href = "/mental_health">Mental health</a>
-	
 </body>
 </html>
 

@@ -17,18 +17,12 @@
         <tbody>
           <%@data.each do |place|%>
             <tr>
-              <td>
-                <p>
-                  <strong> <a href ="<%=place.mobile_url%>"><%=place.name%></a></strong> 
-                  <strong> <%=place.phone%></strong> 
-
-
-                </p>
-                <p><i><%=place.categories[0][0]%></i></p>
-                <% place.location.display_address.each do |add| %>
-                  <p><%= add %> </p>
-                <% end %>   
-              </td>
+              <td><a href ="<%=place.mobile_url%>" target='_blank'><%=place.name%></a>&nbsp&nbsp&nbsp&nbsp<%=place.phone%></td>
+                <td><i><%=place.categories[0][0]%></i>
+                    <% place.location.display_address.each do |add| %>
+                      <%= add %>
+                    <% end %>   
+                </td>
             </tr>
          <%end%>
         </tbody>
@@ -42,7 +36,7 @@
       </div>
 
     
-      </div>
+    </div>
 
   </div>
 
