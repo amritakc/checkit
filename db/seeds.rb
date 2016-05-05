@@ -7,4 +7,4 @@ Womenshelter.create(name:"Rosalie House", street:"1175 Howard Street, Suite 225"
 Womenshelter.create(name:"La Casa de las Madres", street:"1663 Mission, Suite 225", city:"San Francisco",state: "CA", latitude:"37.771231", longitude:"-122.419317",phone:"415-503-0500")
 Womenshelter.create(name:"Asia Women's Shelter", street:"3543 18th St #19",city: "San Francisco", state:"CA", latitude:"37.761440", longitude:"-122.422656",phone:"415-751-0880")
 
-User.create(email:"ali@gmail.com", password:"password")
+User.create(email:"demo@gmail.com", password:"password")
