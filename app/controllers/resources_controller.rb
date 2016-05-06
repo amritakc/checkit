@@ -1,4 +1,5 @@
 class ResourcesController < ApplicationController
+	  before_action :require_login, only: [:index, :show_food, :show_hospital, :show_womenshelter, :show_youthshelter]
 
 	def index
 	end

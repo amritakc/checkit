@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :require_correct_user, only: [:show_signs, :show_trust]
 
 		def create
 	  		@user = User.find_by(email: params[:email])
