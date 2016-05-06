@@ -11,13 +11,13 @@
       });
     </script>
       <div class ="col-sm-4">
-      <h1>Hospitals</h1>
+      <h1>Mental Health Facilities</h1>
       <table class="table table-bordered">
         <tbody>
           <%@data.each do |place|%>
             <tr>
               <td>
-                <p><a href ="<%=place.mobile_url%>"><strong><%=place.name%></strong></a></p>
+                <p><a href ="<%=place.mobile_url%>" target='_blank'><strong><%=place.name%></strong></a></p>
                 <p><%=place.phone%></p>
                 <% place.location.display_address.each do |add| %>
                   <p><%= add %> </p>

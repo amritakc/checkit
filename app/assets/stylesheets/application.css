@@ -1,12 +1,13 @@
-.container{
-	padding: 50px;
-}
-#left_panel ul li{
-	list-style: none;
+#login{
+	padding-top: 50px;
+	padding-left: 5%;
 }
 a{
 	text-decoration: none;
 }
 .list-group h3{
 	margin-left: 50px;
+}
+h1{
+	font-size: 50px;
 }
