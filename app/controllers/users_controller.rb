@@ -14,6 +14,11 @@ class UsersController < ApplicationController
   			end
   		end
 
+      def index
+        @data = { lightLevel: 25.2, rawValue: 651, id: 1, address: "1980 Zanker Road, CA" }
+        render :json => @data
+      end
+
   		def show_signs
   		end
 
