@@ -16,7 +16,7 @@
 
 	<%if flash[:loginmistakes]%>
 		<%flash[:loginmistakes].each do |mes| %>
-		<p style="color: white;"><%=mes%></p>
+		<p style="color: red;"><%=mes%></p>
 		<%end%>
 	<%end%>
 </div>
