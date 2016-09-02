@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  # before_action :require_correct_user, only: [:show_signs, :show_trust]
 
 		def create
 	  		@user = User.find_by(email: params[:email])
@@ -12,6 +13,10 @@ class UsersController < ApplicationController
 	  			redirect_to "/" 
   			end
   		end
+
+      def index
+        @data = { lightLevel: 25.2, rawValue: 651, id: 1, address: "1980 Zanker Road, CA" }
+      end
 
   		def show_signs
   		end
